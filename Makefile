@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -O2 -I./data -I./src
 LIBS = -lm
 
-SRC = src/main.c src/puff.c data/params.c
+SRC = src/main.c src/puff.c src/emissions.c data/params.c
 TARGET = simulation
 
 all: $(TARGET)

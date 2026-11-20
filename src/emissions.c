@@ -1,15 +1,8 @@
-#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
-
+#include "emissions.h"
 #include "../data/params.h"
 
-double emissions() {
-
+double emissions(void) {
     double E_NO2 = f_NO2 * E_NOX;
-
-    double Q = E_NO2*TJM/(1*1e+3 + 8.64*1e+4);
-
+    double Q = E_NO2 * TJM / (1000.0 * 86400.0);
     return Q;
 }
-
