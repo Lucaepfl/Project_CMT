@@ -9,6 +9,5 @@ typedef struct {
     double Q_emis;
 } Puff;
 
-double calc_puff_concentration(Puff p, double x_recept, double y_recept, double z_recept);
-
+double calc_puff_concentration(Puff p, double t_now, double x_recept, double y_recept, double z_recept);
 #endif
